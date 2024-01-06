@@ -3,3 +3,16 @@
 * {
     font-family: 'Tektur';
 }
+
+body {
+    background-color: rgb(104, 85, 72);
+    color: rgb(217, 217, 217);
+    margin-top: 20px;
+    margin-inline: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(163, 141, 126);
+}
