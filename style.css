@@ -5,14 +5,73 @@
 }
 
 body {
+    
     background-color: rgb(104, 85, 72);
     color: rgb(217, 217, 217);
-    margin-top: 20px;
-    margin-inline: 10px;
+    /* margin-top: 20px;
+    margin-inline: 10px; */
+    margin: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-inline: 10px;
+    max-height: 100vh;
+    max-width: 100vw;
+}
 header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(163, 141, 126);
+    width: 99.9%;
+}
+
+h1.logo-welcome  {
+    margin: 10px 0px 5px 0px; /* dwie wartości oznaczają: 1. góra-dół, 2. lewo-prawo*/
+}
+h3.logo-name {
+    margin: 5px 0px 10px 0px;
+}
+
+nav.navbar {
+    background-color: rgb(144, 123, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    width: 80%;
+    height: 50px;
+
+}
+
+a.nav-button {
+    text-decoration: none;
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(163, 141, 126);
+    color: rgb(217, 217, 217);
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: rgb(191, 168, 152);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(207, 181, 163);
+    cursor: pointer;
 }
