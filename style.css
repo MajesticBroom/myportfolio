@@ -6,8 +6,15 @@
 
 body {
     
-    background-color: rgb(104, 35, 34);
-    background-image: radial-gradient(at 5% 20%, rgb(231, 114, 114) 0px, transparent 50%);
+    background-color: rgb(57, 15, 43);
+    background-image:
+        radial-gradient(at 1% 9%, rgba(83, 49, 117, 0.826) 0px, transparent 50%),
+        radial-gradient(at 51% 11%, rgba(156, 71, 126, 0.729) 0px, transparent 50%),
+        radial-gradient(at 97% 36%, rgba(91, 64, 118, 0.826) 0px, transparent 50%),
+        radial-gradient(at 7% 96%, rgba(128, 54, 135, 0.585) 0px, transparent 50%),
+        radial-gradient(at 38% 74%, rgba(145, 73, 164, 0.585) 0px, transparent 50%),
+        radial-gradient(at 98% 82%, rgba(123, 56, 101, 0.451) 0px, transparent 50%);
+        
     color: rgb(217, 217, 217);
     /* margin-top: 20px;
     margin-inline: 10px; */
@@ -24,23 +31,35 @@ body {
     max-height: 100vh;
     max-width: 100vw;
 }
+
+.space-20{
+    height: 20px;
+    background-color: transparent;
+}
+.space-10p{
+    height: 3vh;
+    background-color: transparent;
+}
+
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(163, 141, 126);
+    background-color: rgb(28, 7, 29);
     width: 99.9%;
+    border-radius: 20px;
+
 }
 
 h1.logo-welcome  {
-    margin: 10px 0px 5px 0px; /* dwie wartości oznaczają: 1. góra-dół, 2. lewo-prawo*/
+    margin: 10px 0px 5px 0px;
 }
 h3.logo-name {
     margin: 5px 0px 10px 0px;
 }
 
 nav.navbar {
-    background-color: rgb(144, 123, 109);
+    background-color: rgb(28, 7, 29);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,33 +67,38 @@ nav.navbar {
 
     width: 90%;
     height: 50px;
+    border-radius: 0px 0px 10px 10px;
+
 
 }
 
-a.nav-button {
+a.nav-button, a.learn-more {
     text-decoration: none;
 }
-button {
+a.nav-button button, a.learn-more button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 120px;
     height: 30px;
     text-align: center;
-    background-color: rgb(163, 141, 126);
+    background-color: rgb(79, 42, 62);
     color: rgb(217, 217, 217);
     border: 0;
     font-size: 16px;
     font-weight: 600;
+    transition: all 0.2s ease-in-out;
 }
 
-button:hover {
-    background-color: rgb(191, 168, 152);
+a.nav-button button:hover, a.learn-more button:hover {
+    background-color: rgb(92, 50, 73);
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
 }
 
-button:active {
-    background-color: rgb(207, 181, 163);
+a.nav-button button:active, a.learn-more button:active {
+    background-color: rgb(104, 60, 83);
     cursor: pointer;
 }
 
@@ -83,17 +107,53 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    height: 600px;
-    background-color: rgba(37, 37, 37, 0.58);
-    text-align: center;
+    width: 85vw;
+    height: 75vh;
+    background-color: rgba(183, 183, 183, 0.379);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(217, 217, 217, 0.2);
+    /* padding: 20px; */
 }
 
-section.content {
-    width: 92%;
-    height: 500px;
-    background-color: rgba(7, 7, 7, 0.471);
-    margin: 0px 0px 10px 0px;
-    padding: 10px;
+.main-header p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 20px 0px;
+}
+
+.main-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+div.circle {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.circle img {
+    border-radius: 50%;
+    max-width: 450px;
+    box-shadow: 0px 0px 15px rgba(1, 1, 1, 0.923);
+    transition: ease-in-out 0.2s;
+
+}
+.circle img:hover {
+    max-width: 455px;
+    transition: ease-in-out 0.2s;
+}
+
+footer p {
+    font-size: 13px;
 }
