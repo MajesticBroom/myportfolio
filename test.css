@@ -1,0 +1,15 @@
+.scroll-container {
+    height: 300px; /* Ustaw wysokość kontenera, aby był przewijalny */
+    overflow-y: auto; /* Ustaw przewijanie pionowe */
+}
+
+.animated-element {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateX(0);
+}

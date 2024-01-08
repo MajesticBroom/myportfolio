@@ -24,6 +24,25 @@ main {
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway&family=Tektur:wght@400;500;600;700;800;900&display=swap');
 
+@keyframes FadeInFromRight  {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes FadeInFromLeft  {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 * {
     font-family: 'Tektur';
 }
@@ -90,8 +109,9 @@ nav.navbar {
 
     width: 90%;
     min-height: 50px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
     padding: 10px 10px;
+    margin-top: 5px;
 
 }
 
@@ -169,6 +189,24 @@ main::-webkit-scrollbar {
     display: flex;
     padding: 0px 20px;
     margin: 20px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.step1 {
+    animation: FadeInFromLeft 1s ease-in-out forwards;
+}
+
+.step2 {
+    animation: FadeInFromRight 1s ease-in-out forwards;
+}
+
+.step3 {
+    animation: FadeInFromLeft 1s ease-in-out forwards;
+    padding-bottom: 20px;
+}
+
+.step1:hover, .step2:hover, .step3:hover {
+    transition: all 0.3s ease-in-out;
 }
 
 .main-content-head h1 {
@@ -208,135 +246,35 @@ div.circle {
 .circle img.img-step2 {
     box-shadow: 0px 0px 15px rgba(189, 189, 189, 0.535);
 }
-.circle img:hover {
-    max-width: 455px;
-    transition: ease-in-out 0.2s;
-}
+
 
 footer p {
     font-size: 13px;
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        max-width: 100vw;
-        max-height: fit-content;
-    }
-    nav.navbar {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        place-items: center;
-        grid-gap: 10px 0px;
-        padding: 10px 0px;
-    }
-
-    a.nav-button button {
-        width: 150px;
-        height: 40px;
-        font-size: 19px;
-    }
-    main {
-        height: fit-content;
-    }
-
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .main-content-text h1 {
-        font-size: 30px;
-    }
-    .main-content-text p {
-        font-size: 15px;
-    }
-
-    .circle img {
-        max-width: 250px;
-        margin-bottom: 10px;
-    }
-
-    .circle img:hover {
-        max-width: 250px;
-        
-    }
+    
 }
 
-@media screen and (min-width: 769px) and (max-width: 1150px) {
-    .container {
-        max-width: 100vw;
-        max-height: fit-content;
+@media screen and (min-width: 769px) and (max-width: 1485px) {
+    .step0, .step1, .step2, .step3, .step4 {
+        scale: 80%;
     }
-
-    nav.navbar {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        place-items: center;
-        grid-gap: 10px 0px;
-        padding: 10px 0px;
-    }
-
-    a.nav-button button {
-        width: 180px;
-        height: 50px;
-        font-size: 24px;
-    }
-
-    main {
-        height: fit-content;
-    }
-
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .main-content-text h1 {
-        font-size: 40px;
-    }
-    .main-content-text p {
-        font-size: 25px;
-    }
-
-    .circle img {
-        max-width: 350px;
-    }
-
-    .circle img:hover {
-        max-width: 350px;
+    .step1:hover, .step2:hover, .step3:hover, .step4:hover {
+        scale: 81%;
     }
 }
 
 
-@media screen and (min-width: 1151px) and (max-width: 1490px) {
-    
-    nav.navbar {
-        min-height: 65px;
+@media screen and (min-width: 1486px) and (max-width: 1680px) {
+    .step0, .step1, .step2, .step3, .step4 {
+        scale: 90%;
     }
-    a.nav-button button {
-        width: 160px;
-        height: 45px;
-        font-size: 24px;
+    .step1:hover, .step2:hover, .step3:hover, .step4:hover {
+        scale: 91%;
     }
+}
 
-    .main-content-text h1 {
-        font-size: 40px;
-    }
-    .main-content-text p {
-        font-size: 24px;
-    }
+@media screen and (min-width: 1681px) {
     
-    
-    .circle img {
-        max-width: 350px;
-    }
-    .circle img:hover {
-        max-width: 350px;
-    }
 }
