@@ -199,7 +199,21 @@ main::-webkit-scrollbar {
     scale: 105%;
     transition: all 0.3s ease-in-out;
 }
+
+.step1 {
+    animation: FadeInFromLeft 1s ease-in-out forwards;
+    
+}
+.step2 {
+    animation: FadeInFromRight 1s ease-in-out forwards;
+    
+}
+.step3 {
+    animation: FadeInFromLeft 1s ease-in-out forwards;
+    
+}
 .step4 {
+    animation: FadeInFromRight 1s ease-in-out forwards;
     padding-bottom: 20px;
 }
 

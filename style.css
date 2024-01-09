@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway&family=Tektur:wght@400;500;600;700;800;900&display=swap');
-@keyframes FadeInFromRight  {
+
+/* @keyframes FadeInFromRight  {
     from {
         opacity: 0;
         transform: translateX(40px);
     } to {
         opacity: 1;
         transform: translateX(0);
+    }
+
+    from {
+        scale: 100%;
+    } to {
+        scale: 105%;
     }
 }
 @keyframes FadeInFromLeft  {
@@ -17,6 +24,17 @@
         transform: translateX(0);
     }
 }
+
+@keyframes ScaleUp  {
+    from {
+        scale: 100%;
+    } to {
+        scale: 105%;
+    }
+} */
+
+
+
 * {
     font-family: 'Tektur';
 }
@@ -176,12 +194,13 @@ main::-webkit-scrollbar {
 
 
 
-.main-content-head h1 {
+/* .main-content-head h1 {
     font-size: 50px;
     margin: 0;
-    animation: FadeInFromLeft 1s ease-in-out forwards;
+    animation: FadeInFromLeft 1s ease-in-out forwards, ScaleUp 0.5s ease-in-out forwards;
+    animation-delay: 1s;
 
-}
+} */
 .main-content-text {
     display: flex;
     flex-direction: column;
