@@ -1,47 +1,7 @@
-/* .circle img {
-    border-radius: 20px;
-    max-width: 500px;
-    box-shadow: 0px 0px 15px rgba(221, 221, 221, 0.595);
-    transition: ease-in-out 0.2s;
-}
-.circle img:hover {
-    max-width: 505px;
-    transition: ease-in-out 0.2s;
-}
-main {
-    min-height: 70vh;
-    height: fit-content;
-}
-.main-content {
-    display: flex;
-    flex-direction: column;
-}
-.step1 {
-    display: flex;
-    padding: 0px 20px;
-} */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway&family=Tektur:wght@400;500;600;700;800;900&display=swap');
-
-@keyframes FadeInFromRight  {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    } to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes FadeInFromLeft  {
-    from {
-        opacity: 0;
-        transform: translateX(-40px);
-    } to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+@import "../styles/animations.css";
 
 * {
     font-family: 'Tektur';
@@ -193,21 +153,21 @@ main::-webkit-scrollbar {
 }
 
 .step1 {
-    animation: FadeInFromLeft 1s ease-in-out forwards;
+    animation: FadeInFromLeft 2s ease-in-out forwards;
+
 }
 
 .step2 {
-    animation: FadeInFromRight 1s ease-in-out forwards;
+    animation: FadeInFromRight 2s ease-in-out forwards;
+
 }
 
 .step3 {
-    animation: FadeInFromLeft 1s ease-in-out forwards;
+    animation: FadeInFromLeft 2s ease-in-out forwards;
     padding-bottom: 20px;
+
 }
 
-.step1:hover, .step2:hover, .step3:hover {
-    transition: all 0.3s ease-in-out;
-}
 
 .main-content-head h1 {
     font-size: 50px;
@@ -257,22 +217,12 @@ footer p {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1485px) {
-    .step0, .step1, .step2, .step3, .step4 {
-        scale: 80%;
-    }
-    .step1:hover, .step2:hover, .step3:hover, .step4:hover {
-        scale: 81%;
-    }
+    
 }
 
 
 @media screen and (min-width: 1486px) and (max-width: 1680px) {
-    .step0, .step1, .step2, .step3, .step4 {
-        scale: 90%;
-    }
-    .step1:hover, .step2:hover, .step3:hover, .step4:hover {
-        scale: 91%;
-    }
+    
 }
 
 @media screen and (min-width: 1681px) {

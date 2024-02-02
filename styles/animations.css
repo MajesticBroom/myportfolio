@@ -1,32 +1,44 @@
 @keyframes FadeInFromRight  {
-    from {
+    0% {
         opacity: 0;
-        transform: translateX(40px);
-    } to {
-        opacity: 1;
-        transform: translateX(0);
+        transform: translateX(50px) scale(90%);
+    
     }
+    50% {
+        opacity: 1;
+        transform: translateX(0) scale(90%);
 
-    from {
-        scale: 100%;
-    } to {
-        scale: 105%;
+    }
+    100% {
+        transform: scale(100%);
+
     }
 }
 @keyframes FadeInFromLeft  {
-    from {
+    0% {
         opacity: 0;
-        transform: translateX(-40px);
-    } to {
-        opacity: 1;
-        transform: translateX(0);
+        transform: translateX(-50px) scale(90%);
+
+    
     }
+    50% {
+        opacity: 1;
+        transform: translateX(0) scale(90%);
+
+    }
+    100% {
+        transform: scale(100%);
+    }
+
+    
 }
 
-@keyframes ScaleUp  {
+@keyframes ScaleUp {
     from {
-        scale: 95%;
-    } to {
         scale: 100%;
     }
+    to {
+        scale: 103%;
+    }
+    
 }

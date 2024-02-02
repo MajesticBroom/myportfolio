@@ -1,39 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway&family=Tektur:wght@400;500;600;700;800;900&display=swap');
-
-/* @keyframes FadeInFromRight  {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    } to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    from {
-        scale: 100%;
-    } to {
-        scale: 105%;
-    }
-}
-@keyframes FadeInFromLeft  {
-    from {
-        opacity: 0;
-        transform: translateX(-40px);
-    } to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes ScaleUp  {
-    from {
-        scale: 100%;
-    } to {
-        scale: 105%;
-    }
-} */
-
-
+@import "./styles/animations.css";
 
 * {
     font-family: 'Tektur';
@@ -183,14 +149,15 @@ main::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
+    /* animation: animacja 1.1s ease-in-out forwards; */
 
 }
 
-.step1:hover {
+/* .step1:hover {
     transition: all 0.3s ease-in-out;
     scale: 102%;
-}
+} */
 
 
 
@@ -207,7 +174,7 @@ main::-webkit-scrollbar {
     align-items: center;
     padding: 0px 20px;
     width: 800px;
-    animation: FadeInFromLeft 1s ease-in-out forwards;
+    animation: FadeInFromLeft 2s ease-in-out forwards;
 
 }
 
@@ -220,6 +187,14 @@ main::-webkit-scrollbar {
     font-size: 26px;
 }
 
+.main-content-text button {
+    margin: 10px 5px;
+}
+
+.main-content-text button:hover {
+    scale: 104%;
+}
+
 div.circle {
     width: fit-content;
     display: flex;
@@ -228,7 +203,8 @@ div.circle {
 .circle img {
     border-radius: 20px;
     max-width: 380px;
-    animation: FadeInFromRight 1s ease-in-out forwards;
+    animation: FadeInFromRight 2s ease-in-out forwards;
+    
 }
 .circle img.img-step1 {
     box-shadow: 0px 0px 15px rgba(31, 31, 31, 0.535);

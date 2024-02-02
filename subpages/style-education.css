@@ -1,47 +1,8 @@
-/* .circle img {
-    border-radius: 20px;
-    max-width: 500px;
-    box-shadow: 0px 0px 15px rgba(221, 221, 221, 0.595);
-    transition: ease-in-out 0.2s;
-}
-.circle img:hover {
-    max-width: 505px;
-    transition: ease-in-out 0.2s;
-}
-main {
-    min-height: 70vh;
-    height: fit-content;
-}
-.main-content {
-    display: flex;
-    flex-direction: column;
-}
-.step1 {
-    display: flex;
-    padding: 0px 20px;
-} */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+@import "../styles/animations.css";
 
-@keyframes FadeInFromRight  {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    } to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes FadeInFromLeft  {
-    from {
-        opacity: 0;
-        transform: translateX(-40px);
-    } to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 * {
     font-family: 'Tektur';
@@ -194,26 +155,22 @@ main::-webkit-scrollbar {
 .step0:hover {
     cursor: default;
 }
-.step1:hover, .step2:hover, .step3:hover, .step4:hover {
-    cursor: default;
-    scale: 105%;
-    transition: all 0.3s ease-in-out;
-}
+
 
 .step1 {
-    animation: FadeInFromLeft 1s ease-in-out forwards;
+    animation: FadeInFromLeft 2s ease-in-out forwards;
     
 }
 .step2 {
-    animation: FadeInFromRight 1s ease-in-out forwards;
+    animation: FadeInFromRight 2s ease-in-out forwards;
     
 }
 .step3 {
-    animation: FadeInFromLeft 1s ease-in-out forwards;
+    animation: FadeInFromLeft 2s ease-in-out forwards;
     
 }
 .step4 {
-    animation: FadeInFromRight 1s ease-in-out forwards;
+    animation: FadeInFromRight 2s ease-in-out forwards;
     padding-bottom: 20px;
 }
 
