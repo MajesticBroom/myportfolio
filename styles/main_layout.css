@@ -4,15 +4,54 @@
 
 body {
     
-    background-color: rgb(57, 15, 43);
+
+    /* Purple */
+    /* background-color: rgb(57, 15, 43);
     background-image:
         radial-gradient(at 1% 9%, rgba(83, 49, 117, 0.826) 0px, transparent 50%),
         radial-gradient(at 51% 11%, rgba(156, 71, 126, 0.729) 0px, transparent 50%),
         radial-gradient(at 97% 36%, rgba(91, 64, 118, 0.826) 0px, transparent 50%),
         radial-gradient(at 7% 96%, rgba(128, 54, 135, 0.585) 0px, transparent 50%),
         radial-gradient(at 38% 74%, rgba(145, 73, 164, 0.585) 0px, transparent 50%),
-        radial-gradient(at 98% 82%, rgba(123, 56, 101, 0.451) 0px, transparent 50%);
+        radial-gradient(at 98% 82%, rgba(123, 56, 101, 0.451) 0px, transparent 50%); */
         
+    
+
+    /* Blue */
+    /* background-color: rgb(26, 48, 66);
+    background-image:
+        radial-gradient(at 1% 9%, rgba(104, 175, 214, 0.826) 0px, transparent 50%),
+        radial-gradient(at 51% 11%, rgba(78, 119, 161, 0.729) 0px, transparent 50%),
+        radial-gradient(at 97% 36%, rgba(84, 106, 151, 0.826) 0px, transparent 50%),
+        radial-gradient(at 7% 96%, rgba(44, 58, 89, 0.585) 0px, transparent 50%),
+        radial-gradient(at 38% 74%, rgba(85, 130, 175, 0.585) 0px, transparent 50%),
+        radial-gradient(at 98% 82%, rgba(80, 110, 156, 0.451) 0px, transparent 50%); */
+
+
+    /* Orange */
+    /* background-color: rgb(147, 64, 34);
+    background-image:
+        radial-gradient(at 1% 9%, rgba(202, 117, 91, 0.826) 0px, transparent 50%),
+        radial-gradient(at 51% 11%, rgba(110, 69, 38, 0.729) 0px, transparent 50%),
+        radial-gradient(at 97% 36%, rgba(183, 126, 89, 0.826) 0px, transparent 50%),
+        radial-gradient(at 7% 96%, rgba(119, 67, 28, 0.585) 0px, transparent 50%),
+        radial-gradient(at 38% 74%, rgba(159, 94, 51, 0.585) 0px, transparent 50%),
+        radial-gradient(at 98% 82%, rgba(126, 53, 31, 0.451) 0px, transparent 50%); */
+        
+    
+        
+    /* Gray */
+    background-color: rgb(72, 72, 72);
+    background-image:
+        radial-gradient(at 1% 9%, rgba(86, 86, 86, 0.826) 0px, transparent 50%),
+        radial-gradient(at 51% 11%, rgba(119, 119, 119, 0.729) 0px, transparent 50%),
+        radial-gradient(at 97% 36%, rgba(48, 48, 48, 0.826) 0px, transparent 50%),
+        radial-gradient(at 7% 96%, rgba(42, 42, 42, 0.585) 0px, transparent 50%),
+        radial-gradient(at 38% 74%, rgba(110, 110, 110, 0.585) 0px, transparent 50%),
+        radial-gradient(at 98% 82%, rgba(45, 45, 45, 0.451) 0px, transparent 50%);
+
+
+
     color: rgb(217, 217, 217);
     /* margin-top: 20px;
     margin-inline: 10px; */

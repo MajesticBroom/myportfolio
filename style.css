@@ -1,27 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway&family=Tektur:wght@400;500;600;700;800;900&display=swap');
 @import "./styles/animations.css";
+@import "./styles/main_layout.css";
 
-* {
-    font-family: 'Tektur';
-}
-
-body {
-    
-    background-color: rgb(57, 15, 43);
-    background-image:
-        radial-gradient(at 1% 9%, rgba(83, 49, 117, 0.826) 0px, transparent 50%),
-        radial-gradient(at 51% 11%, rgba(156, 71, 126, 0.729) 0px, transparent 50%),
-        radial-gradient(at 97% 36%, rgba(91, 64, 118, 0.826) 0px, transparent 50%),
-        radial-gradient(at 7% 96%, rgba(128, 54, 135, 0.585) 0px, transparent 50%),
-        radial-gradient(at 38% 74%, rgba(145, 73, 164, 0.585) 0px, transparent 50%),
-        radial-gradient(at 98% 82%, rgba(123, 56, 101, 0.451) 0px, transparent 50%);
-        
-    color: rgb(217, 217, 217);
-    /* margin-top: 20px;
-    margin-inline: 10px; */
-    margin: 0;
-    min-height: 100vh;
-}
 
 .container {
     display: flex;

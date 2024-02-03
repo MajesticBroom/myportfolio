@@ -2,9 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway&family=Tektur:wght@400;500;600;700;800;900&display=swap');
 @import "../styles/animations.css";
+@import "../styles/main_layout.css";
 
 
-* {
+/* * {
     font-family: 'Tektur';
 }
 
@@ -20,11 +21,11 @@ body {
         radial-gradient(at 98% 82%, rgba(123, 56, 101, 0.451) 0px, transparent 50%);
         
     color: rgb(217, 217, 217);
-    /* margin-top: 20px;
-    margin-inline: 10px; */
+    margin-top: 20px;
+    margin-inline: 10px;
     margin: 0;
     min-height: 100vh;
-}
+} */
 
 .container {
     display: flex;
