@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway&family=Tektur:wght@400;500;600;700;800;900&display=swap');
 @import "./styles/animations.css";
 @import "./styles/main_layout.css";
+@import "./styles/colors.css";
 
 
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +26,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(28, 7, 29, 0.65);
+    /* background-color: rgba(28, 7, 29, 0.65); 
+    background-color: var(--header-color-gray);
     width: 99.9%;
     border-radius: 20px;
 
@@ -39,7 +41,8 @@ h3.logo-name {
 }
 
 nav.navbar {
-    background-color: rgba(28, 7, 29, 0.65);
+    /* background-color: rgba(28, 7, 29, 0.65); 
+    background-color: var(--header-color-gray);
 
     display: flex;
     justify-content: space-evenly;
@@ -53,7 +56,7 @@ nav.navbar {
 
     
 
-}
+} */
 
 a.nav-button, a.learn-more {
     text-decoration: none;
@@ -64,7 +67,8 @@ a.nav-button button, a.learn-more button {
     justify-content: center;
     
     text-align: center;
-    background-color: rgb(79, 42, 62);
+    /* background-color: rgb(79, 42, 62); */
+    background-color: var(--button-color);
     color: rgb(217, 217, 217);
     border: 0;
     font-weight: 600;
@@ -80,7 +84,8 @@ a.learn-more button {
 }
 
 a.nav-button button:hover, a.learn-more button:hover {
-    background-color: rgb(92, 50, 73);
+    /* background-color: rgb(92, 50, 73); */
+    background-color: var(--button-hover-color);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 
@@ -98,9 +103,9 @@ main {
     align-items: center;
     width: 85vw;
     height: 75vh;
-    background-color: rgba(183, 183, 183, 0.379);
+    background-color: var(--main-content-bg-color);
     border-radius: 20px;
-    box-shadow: 0px 0px 5px rgba(217, 217, 217, 0.2);
+    box-shadow: 0px 0px 5px var(--main-content-bg-shadow-color);
     /* padding: 20px; */
     overflow: auto;
     scrollbar-width: none;
