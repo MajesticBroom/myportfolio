@@ -4,6 +4,7 @@
 @import "../styles/animations.css";
 @import "../styles/main_layout.css";
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -76,7 +77,6 @@ main {
     background-color: rgba(183, 183, 183, 0.379);
     border-radius: 20px;
     box-shadow: 0px 0px 5px rgba(217, 217, 217, 0.2);
-    /* padding: 20px; */
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -100,29 +100,35 @@ main::-webkit-scrollbar {
 }
 
 
-.step1, .step2, .step3 {
+.step1, .step2, .step3, .step4 {
     display: flex;
+    gap: 30px;
     padding: 0px 20px;
     margin: 20px 0px;
     transition: all 0.3s ease-in-out;
+
 }
+.step0:hover {
+    cursor: default;
+}
+
 
 .step1 {
     animation: FadeInFromLeft 2s ease-in-out forwards;
-
+    
 }
-
 .step2 {
     animation: FadeInFromRight 2s ease-in-out forwards;
-
+    
 }
-
 .step3 {
     animation: FadeInFromLeft 2s ease-in-out forwards;
-    padding-bottom: 20px;
-
+    
 }
-
+.step4 {
+    animation: FadeInFromRight 2s ease-in-out forwards;
+    padding-bottom: 20px;
+}
 
 .main-content-head h1 {
     font-size: 50px;
@@ -132,8 +138,9 @@ main::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0px 20px;
-    width: 900px;
+    width: fit-content;
 }
 
 .main-content-text h1 {
@@ -145,21 +152,14 @@ main::-webkit-scrollbar {
     font-size: 26px;
 }
 
-div.circle {
+/* div.circle {
     width: fit-content;
     display: flex;
     align-items: center;
-}
-.circle img {
-    border-radius: 20px;
-    max-width: 450px;
+} */
+img {
+    max-width: 250px;
     transition: ease-in-out 0.2s;
-}
-.circle img.img-step1 {
-    box-shadow: 0px 0px 15px rgba(31, 31, 31, 0.535);
-}
-.circle img.img-step2 {
-    box-shadow: 0px 0px 15px rgba(189, 189, 189, 0.535);
 }
 
 
@@ -171,15 +171,15 @@ footer p {
     
 }
 
-@media screen and (min-width: 769px) and (max-width: 1485px) {
+@media screen and (min-width: 769px) and (max-width: 1150px) {
     
 }
 
 
-@media screen and (min-width: 1486px) and (max-width: 1680px) {
+@media screen and (min-width: 1151px) and (max-width: 1550px) {
     
 }
 
-@media screen and (min-width: 1681px) {
+@media screen and (min-width: 1551px) {
     
 }

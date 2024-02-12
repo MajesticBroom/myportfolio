@@ -62,7 +62,7 @@ a.nav-button button:hover, a.learn-more button:hover {
 }
 
 a.nav-button button:active, a.learn-more button:active {
-    background-color: rgb(104, 60, 83);
+    background-color: var(--button-active-color);
     cursor: pointer;
 }
 
@@ -105,24 +105,10 @@ main::-webkit-scrollbar {
     justify-content: center;
     gap: 20px;
     transition: all 1s ease-in-out;
-    /* animation: animacja 1.1s ease-in-out forwards; */
 
 }
 
-/* .step1:hover {
-    transition: all 0.3s ease-in-out;
-    scale: 102%;
-} */
 
-
-
-/* .main-content-head h1 {
-    font-size: 50px;
-    margin: 0;
-    animation: FadeInFromLeft 1s ease-in-out forwards, ScaleUp 0.5s ease-in-out forwards;
-    animation-delay: 1s;
-
-} */
 .main-content-text {
     display: flex;
     flex-direction: column;
