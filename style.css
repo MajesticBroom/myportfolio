@@ -4,34 +4,7 @@
 @import "./styles/colors.css";
 
 
-<<<<<<< Updated upstream
-/* .container {
-=======
-
-/* * {
-    font-family: 'Tektur';
-}
-
-body {
-    
-    background-color: rgb(57, 15, 43);
-    background-image:
-        radial-gradient(at 1% 9%, rgba(83, 49, 117, 0.826) 0px, transparent 50%),
-        radial-gradient(at 51% 11%, rgba(156, 71, 126, 0.729) 0px, transparent 50%),
-        radial-gradient(at 97% 36%, rgba(91, 64, 118, 0.826) 0px, transparent 50%),
-        radial-gradient(at 7% 96%, rgba(128, 54, 135, 0.585) 0px, transparent 50%),
-        radial-gradient(at 38% 74%, rgba(145, 73, 164, 0.585) 0px, transparent 50%),
-        radial-gradient(at 98% 82%, rgba(123, 56, 101, 0.451) 0px, transparent 50%);
-        
-    color: rgb(217, 217, 217);
-    /* margin-top: 20px;
-    margin-inline: 10px;
-    margin: 0;
-    min-height: 100vh;
-} */
-
 .container {
->>>>>>> Stashed changes
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,37 +26,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: rgba(28, 7, 29, 0.65); 
-    background-color: var(--header-color-gray);
-    width: 99.9%;
-    border-radius: 20px;
-
 }
-
-h1.logo-welcome  {
-    margin: 10px 0px 5px 0px;
-}
-h3.logo-name {
-    margin: 5px 0px 10px 0px;
-}
-
-nav.navbar {
-    /* background-color: rgba(28, 7, 29, 0.65); 
-    background-color: var(--header-color-gray);
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    width: 90%;
-    min-height: 50px;
-    border-radius: 10px;
-    padding: 10px 10px;
-    margin-top: 5px;
-
-    
-
-} */
 
 a.nav-button, a.learn-more {
     text-decoration: none;
