@@ -28,6 +28,18 @@ header {
     align-items: center;
 }
 
+.logo-welcome {
+    font-size: 40px; 
+}
+.logo-name {
+    font-size: 20px;
+}
+
+nav.navbar {
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
 a.nav-button, a.learn-more {
     text-decoration: none;
 }
@@ -42,15 +54,15 @@ a.nav-button button, a.learn-more button {
     color: rgb(217, 217, 217);
     border: 0;
     font-weight: 600;
-    width: 160px;
-    height: 45px;
-    font-size: 24px;
+    width: 220px;
+    height: 52px;
+    font-size: 28px;
     transition: all 0.2s ease-in-out;
 }
 a.learn-more button {
-    width: 200px;
-    height: 50px;
-    font-size: 24px;
+    width: 230px;
+    height: 60px;
+    font-size: 30px;
 }
 
 a.nav-button button:hover, a.learn-more button:hover {
@@ -103,7 +115,7 @@ main::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 5%;
     transition: all 1s ease-in-out;
 
 }
@@ -113,19 +125,19 @@ main::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 20px;
-    width: 800px;
+    /* padding: 0px 20px; */
+    width: fit-content;
     animation: FadeInFromLeft 2s ease-in-out forwards;
 
 }
 
 .main-content-text h1 {
-    font-size: 40px;
+    font-size: 47px;
     margin: 0px;
 }
 
 .main-content-text p {
-    font-size: 26px;
+    font-size: 31px;
 }
 
 .main-content-text button {
@@ -143,7 +155,7 @@ div.circle {
 }
 .circle img {
     border-radius: 20px;
-    max-width: 380px;
+    max-width: 360px;
     animation: FadeInFromRight 2s ease-in-out forwards;
     
 }
@@ -153,13 +165,32 @@ div.circle {
 .circle img.img-step2 {
     box-shadow: 0px 0px 15px rgba(189, 189, 189, 0.535);
 }
-.circle img:hover {
-    max-width: 380px;
-    transition: ease-in-out 0.2s;
-}
+
 
 footer p {
     font-size: 13px;
+}
+
+@media screen and (max-width: 400px) {
+   
+    .main-content-text h1 {
+        font-size: 20px;
+        margin: 0px;
+    }
+    
+    .main-content-text p {
+        font-size: 16px;
+    }
+
+    a.learn-more button {
+        width: 250px;
+        height: 70px;
+        font-size: 32px;
+    }
+
+    img {
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -177,6 +208,46 @@ footer p {
     }
 }
 
-@media screen and (min-width: 1551px) {
+@media screen and (max-width: 1750px) {
+    .main-content-text h1 {
+        font-size: 40px;
+        margin: 0px;
+    }
+    
+    .main-content-text p {
+        font-size: 26px;
+    }
+
+    a.learn-more button {
+        width: 210px;
+        height: 48px;
+        font-size: 24px;
+    }
+
+    img {
+        width: 310px;
+    }
+}
+
+@media screen and (min-width: 2040px) {
+
+    .main-content-text h1 {
+        font-size: 50px;
+        margin: 0px;
+    }
+    
+    .main-content-text p {
+        font-size: 36px;
+    }
+
+    a.learn-more button {
+        width: 250px;
+        height: 70px;
+        font-size: 32px;
+    }
+
+    img {
+        width: 400px;
+    }
     
 }
